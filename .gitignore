@@ -1,0 +1,28 @@
+# 豆包重新打包工具 - Git 忽略文件
+
+# 打包输出目录（每次运行脚本生成的）
+doubao_custom/
+
+# macOS 系统文件
+.DS_Store
+._*
+
+# 日志文件
+*.log
+malicious_process_log.txt
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+
+# Python 缓存
+__pycache__/
+
+# 编辑器
+.vscode/
+.idea/
+
+# 已打包的扩展（太大，用户自己生成）
+doubao_repack_v*/
+doubao_custom/

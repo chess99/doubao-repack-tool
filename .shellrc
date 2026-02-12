@@ -1,0 +1,21 @@
+# 豆包重新打包工具 - Shell 配置
+#
+# 使用方法：
+# 将以下内容添加到你的 ~/.zshrc 或 ~/.bashrc 文件中：
+#
+# DOUBAO_TOOL_DIR="/path/to/doubao-repack-tool"  # 修改为实际路径
+# source "$DOUBAO_TOOL_DIR/.shellrc"
+
+# 快捷命令：重新打包豆包扩展
+alias repack-doubao='$DOUBAO_TOOL_DIR/repack_doubao.sh'
+
+# 快捷命令：打开工具目录
+alias doubao-tool='cd $DOUBAO_TOOL_DIR && ls -la'
+
+# 快捷命令：查看使用指南
+alias doubao-help='cat $DOUBAO_TOOL_DIR/README.md | less'
+
+echo "豆包重新打包工具别名已加载！"
+echo "  repack-doubao  - 重新打包豆包扩展"
+echo "  doubao-tool    - 打开工具目录"
+echo "  doubao-help    - 查看使用指南"
